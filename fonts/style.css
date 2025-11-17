@@ -1,0 +1,12 @@
+@font-face {
+  font-family: PixelFont;
+  font-style: normal;
+  font-weight: 400;
+  src: url(PixelFont-Regular.otf) format("opentype");
+}
+
+body {
+  font-family: "PixelFont";
+  font-size: 16px;
+  line-height: 1.4;
+}
