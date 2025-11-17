@@ -5,8 +5,12 @@
   src: url(PixelFont-Regular.otf) format("opentype");
 }
 
-body {
+.font {
   font-family: "PixelFont";
   font-size: 16px;
   line-height: 1.4;
+}
+
+.size {
+  max-width: ;
 }
