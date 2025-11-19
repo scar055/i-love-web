@@ -1,0 +1,19 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-block: 2em;
+}
+
+input:in-range {
+  background-color: palegreen;
+}
+
+input:out-of-range {
+  background-color: palevioletred;
+}
+
+input:open {
+  border: 0.5em solid blue;
+}
