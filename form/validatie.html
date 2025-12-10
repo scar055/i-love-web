@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validatie</title>
+    <script defer src="script.js"></script>
+
+    <style>
+        form:has(:user-invalid) {
+            background-color: lightpink;
+
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label>Zoekterm <input required></label>
+        <button type="submit">Zoek!</button>
+    </form>
+</body>
+
+</html>
