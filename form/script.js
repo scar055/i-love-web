@@ -6,3 +6,9 @@ inputElement.addEventListener("invalid", function (ev) {
   // Stap 3: pas de tekst in de validatiemelding aan
   inputElement.setCustomValidity("Dit veld mag niet leeg zijn hoor..");
 });
+
+let radioElement = document.querySelector("input[name='option']");
+
+radioElement.addEventListener("invalid", function (e) {
+  radioElement.setCustomValidity("kies een van de opties");
+});
