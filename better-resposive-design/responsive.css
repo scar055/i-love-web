@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkblue;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+
+    article {
+        align-self: center;
+        padding: min(5em, 8%);
+        background-color: burlywood;
+        width: 400px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 1em;
+    }
+}
