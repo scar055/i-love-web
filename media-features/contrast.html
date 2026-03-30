@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrast</title>
+
+    <style>
+        p {
+            margin: 5px;
+            width: 100px;
+            height: 100px;
+            outline: 2px dashed black;
+
+            @media (prefers-contrast: more) {
+                outline: 2px solid black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>low contrast box</p>
+</body>
+
+</html>

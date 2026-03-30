@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reduced transparency</title>
+
+    <style>
+        p {
+            opacity: 0.4;
+
+            @media (prefers-reduced-transparency) {
+                opacity: 0.8;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>translusent text</p>
+</body>
+
+</html>
