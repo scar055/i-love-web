@@ -14,8 +14,44 @@
 }
 
 body {
+    max-width: 50em;
+    margin-inline: auto;
+    background-color: rgb(240 240 240);
 
     main {
-        section {}
+        padding: 1em 2em;
+
+        section {
+            margin-block: 1em;
+
+            h2 {
+                margin-block-end: 1em;
+            }
+
+            p {
+                margin-block: 1em;
+            }
+
+            ul {
+                padding-inline-start: 1em;
+
+                li {
+                    margin-block: .5em;
+                }
+            }
+
+            article {
+                display: flex;
+                flex-direction: column;
+                border: 2px solid black;
+                margin-block-end: 1em;
+                padding: 1em;
+                border-radius: 10px;
+
+                img {
+                    align-self: center;
+                }
+            }
+        }
     }
 }
