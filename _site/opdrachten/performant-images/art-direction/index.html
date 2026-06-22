@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture element</title>
+</head>
+
+<body>
+    <picture>
+        <source media="(orientation: portrait)" type="image/avif" srcset="images/parrot.avif" width="300" height="400">
+        <source type="image/avif" srcset="images/parrot.avif">
+        <source type="image/webp" srcset="images/parrot.webp">
+        <img src="images/parrot.png" alt="Plaatje" width="400" height="300">
+    </picture>
+
+</body>
+
+</html>
