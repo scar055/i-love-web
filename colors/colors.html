@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kleuren</title>
+
+    <style>
+        p:nth-of-type(1) {
+            color: orange;
+        }
+
+        p:nth-of-type(2) {
+            color: hsl(40, 100%, 50%);
+        }
+
+        p:nth-of-type(3) {
+            color: rgb(255, 180, 0);
+        }
+
+        p:nth-of-type(4) {
+            color: #ffbb00;
+        }
+
+        .button {
+            --h: 100;
+            --s: 50%;
+            --l: 50%;
+            background: hsl(var(--h), var(--s), var(--l));
+
+            &:hover {
+                --l: 75%;
+            }
+
+            &:focus,
+            &:active {
+                --s: 75%;
+            }
+
+            &[disabled] {
+                --s: 0%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>orange</p>
+    <p>orange hsl</p>
+    <p>orange rgb</p>
+    <p>orange hex</p>
+
+    <p class="button">button</p>
+</body>
+
+</html>
